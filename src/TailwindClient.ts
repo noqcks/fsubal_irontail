@@ -71,7 +71,7 @@ export class TailwindClient {
     return importFrom(tailwindRootPath, "postcss") as typeof import("postcss");
   }
 
-  private extractClassNames([base, components, utilities]: (Result & { root: Root })[]) {
+  private extractClassNames([base, components, utilities]: (Result & { root: import("postcss").Root })[]) {
     const { classNames } = extractClassNames([
       { root: base.root, source: "base" },
       { root: components.root, source: "components" },
