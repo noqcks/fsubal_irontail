@@ -4,7 +4,7 @@ import * as path from "path";
 import extractClassNames from "./extractClassNames";
 import importFrom = require("import-from");
 import resolveFrom = require("resolve-from");
-import type { Result } from "postcss";
+import type { Result, Root } from "postcss";
 import { getTailwindConfigPath } from "./getTailwindConfigPath";
 
 export class TailwindClient {
